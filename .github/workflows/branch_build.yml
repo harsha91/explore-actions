@@ -1,5 +1,5 @@
 ---
-name: Lint Code Base
+name: Branch Build
 on: [push]
 
 jobs:
@@ -9,7 +9,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - name: Set up JDK 
+      - name: Set up JDK
         uses: actions/setup-java@v2
         with:
           java-version: 17
